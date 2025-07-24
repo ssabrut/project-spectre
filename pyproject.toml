@@ -2,16 +2,10 @@
 name = "project-spectre"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Michael Eco",email = "michael.gunawan2002@gmail.com"}
-]
+authors = [{ name = "Michael Eco", email = "michael.gunawan2002@gmail.com" }]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-]
-
-[tool.poetry]
-packages = [{include = "project_spectre", from = "src"}]
+requires-python = ">=3.9,<4.0"
+dependencies = ["langchain (>=0.3.26,<0.4.0)", "langgraph (>=0.5.4,<0.6.0)", "langchain-ollama (>=0.3.6,<0.4.0)", "langchain-core (>=0.3.72,<0.4.0)", "langchain-community (>=0.3.27,<0.4.0)"]
 
 
 [build-system]
